@@ -57,7 +57,7 @@ export const getUserProfileCtrl = asyncHandler(async (req, res) => {
     //verify Token
     const verified = verifyToken(token);
 
-    console.log(verified);
+    console.log(req);
     res.json({
         msg: "Welcome Profile Page!",
     })
